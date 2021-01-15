@@ -16,19 +16,22 @@
             return response.text()
         })
         .then((data) => {
+            // break apart the csv file into the heading and body arrays
             const splitData = data.split('\n')
             const headings = splitData[0].split(',');
             const body = splitData.slice(1);
 
+            // create a dataObject from the body (arrays of the rows)
             const dataObject = []
-
             body.forEach(row => {
                 dataObject.push(row.split(','))
             });   
 
+            // insert the heading row into the page
             var headingsRow = tableRef.insertRow(tableRef.rows.length);
             headingsRow.innerHTML = headings.reduce((acc, curr) => acc += `<th>${curr}</th>`, '');
 
+            // insert each body row into the table
             dataObject.forEach((values) => {
                 var bodyRow = tableRef.insertRow(tableRef.rows.length);
                 bodyRow.innerHTML = values.reduce((acc, curr) => acc += `<td>${curr}</td>`, '');
