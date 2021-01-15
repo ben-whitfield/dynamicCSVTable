@@ -18,4 +18,4 @@ Run `npm run start`
 
 and boom
 
-![alt text](https://github.com/benwdev/dynamicCSVTable/img/tableOutputExample.png "Example of table output")
+![alt text](https://github.com/benwdev/dynamicCSVTable/blob/main/img/tableOutputExample.png "Example of table output")
