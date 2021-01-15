@@ -1,11 +1,23 @@
 {
-  "name": "operability-datadisplay",
+  "name": "dynamic-csv-tables",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Simple example of taking a local csv file and converting that to a html table using Javascript.",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -o index.html"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Ben Whitfield",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benwdev/dynamicCSVTable.git"
+  },
+  "bugs": {
+    "url": "https://github.com/benwdev/dynamicCSVTable/issues"
+  },
+  "homepage": "https://github.com/benwdev/dynamicCSVTable#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
 }

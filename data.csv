@@ -1,3 +1,4 @@
 id,text,time,latency,foo
 1,text1,time1,latency1,foo1
 2,text2,time2,latency2,foo2
+3,text3,time3,latency3,foo3
